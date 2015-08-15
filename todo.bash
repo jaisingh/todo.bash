@@ -7,7 +7,7 @@
 # todo # - edit the file with the todo line
 
 function todo (){
-colorize="$GOPATH/src/github.com/jaisingh/colorize/colorize"
+colorize="$GOPATH/src/github.com/jaisingh/colorize/colorize -alt"
 list=$(find ~/Documents -iname "*.md" -print | xargs egrep "^(\+|\s+\+)")
 
 if [ -z $1 ]
