@@ -12,7 +12,7 @@ list=$(find ~/Documents -iname "*.md" -print | xargs egrep "^(\+|\s+\+)")
 
 if [ -z $1 ]
 then
-	echo "$list" | nl | column -t -s ";" | $colorize -color='default:236'
+	echo "$list" | nl | column -t -s ":" | $colorize -color='default:236'
 	return
 fi
 
